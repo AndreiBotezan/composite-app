@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  margin: auto;
+  border-top: #ffa400 2px solid;
+  border-bottom: #ffa400 2px solid;
+}
+ .logo {
+   font-weight: bold;
+   font-size: 20px;;
+   padding: 20px;
+   margin:0;
+   margin-left: 150px;
+ }
+
+ .logo span {
+   color: #ffa400;
+ }
+
+ .nav-links {
+    padding: 20px;
+    margin-right: 150px;
+    margin-left:auto;
+ }
+
+ .nav-links a {
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 20px;
+   padding-left: 50px;
+ }
