@@ -3,10 +3,10 @@ import './FormPage.css'
 
 export default function FormPage() {
   const [formData, setFormData] = useState({
-    demoStart: "",
-    demoHour: "",
+    dateFrom: "",
+    hour: "",
     fullName: "",
-    email: ""
+    phone: ""
 
   })
 
@@ -34,7 +34,7 @@ export default function FormPage() {
   //   .then(function (data) {
   //       if (data.success) {
   //           this.setState({
-  //               message: "Datele au fost salvate cu success !"
+  //               message: "Thank you for booking a demo!"
   //           });
   //       } else {
   //           this.setState({
@@ -48,18 +48,19 @@ export default function FormPage() {
     <div className="container">
       <form onSubmit={handleSubmit}
             className="contact-form">
+              <h1>BOOK A DEMO</h1>
         <label htmlFor="date">Date from:</label>
         <input 
           type="date" 
-          name="demoStart" 
+          name="dateFrom" 
           onChange={handleChange}
-          value={formData.date}
+          value={formData.dateFrom}
         />
 
         <label htmlFor="hour">Hour:</label>
         <input 
           type="time" 
-          name="demoHour"
+          name="hour"
           onChange={handleChange}
           value={formData.hour}
         />
@@ -72,12 +73,12 @@ export default function FormPage() {
           value={formData.fullName}
             />
 
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="tel">Email:</label>
         <input
-          type="email"
-          name="email"
+          type="phone"
+          name="phone"
           onChange={handleChange}
-          value={formData.email}
+          value={formData.phone}
             />
         <button>SEND REQUEST</button>
       </form>

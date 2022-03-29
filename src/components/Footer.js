@@ -5,8 +5,8 @@ export default function Footer() {
     <div className="footer">
       <ul className='footer-content'>
         <li>COMPOSITE {new Date().getFullYear()}</li>
-        <li><a href="google.com" target='_blank'>About us</a></li>
-        <li><a href="google.com" target='_blank'>| Contact us</a></li>
+        <li><a href="https://www.google.com/" target='_blank' rel='noreferrer'>About us</a></li>
+        <li><a href="https://www.google.com/" target='_blank'rel='noreferrer'>| Contact us</a></li>
       </ul>
     </div>
   )

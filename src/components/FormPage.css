@@ -1,5 +1,34 @@
 .container{
-  background-image: url('../img/background.jpg');
+  background: url('../img/background.jpg') rgba(0, 0, 0, .5);
+  background-blend-mode: darken;
   background-size: cover;
   height: 100vh;
 }
+.contact-form {
+  padding: 50px;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.contact-form label,
+.contact-form input {
+  padding: 5px 10px;
+}
+
+ button {
+  margin-top: 25px;
+  background-color: #ffa400;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 12px;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+.contact-form button:active {
+   background-color: #ffc65c;
+;
+ }
